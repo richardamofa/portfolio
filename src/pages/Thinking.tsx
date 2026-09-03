@@ -22,8 +22,7 @@ export default function Thinking() {
         </h1>
         <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-mute">
           Longer-form writing on systems, trade-offs, and the reasoning behind
-          technical decisions. This list is data-driven, so future notes can
-          be published from Markdown or a CMS without changing this page.
+          technical decisions.
         </p>
       </Reveal>
 

@@ -169,8 +169,8 @@ export const projects: Project[] = [
       },
       {
         src: prepdCheckout,
-        alt: "PREP'D checkout experience",
-        caption: "Commerce and checkout flow",
+        alt: "PREP'D admin dashboard",
+        caption: "Commerce and Administrative flow",
       },
     ],
 

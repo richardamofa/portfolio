@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import Reveal from "../components/Reveal";
 
 export default function ContactCTA() {
@@ -11,7 +11,7 @@ export default function ContactCTA() {
             className="text-balance text-[32px] font-medium leading-[1.15] tracking-tight text-paper md:text-[44px]"
             style={{ fontFamily: "var(--font-sans)" }}
           >
-            Have a hard problem?
+            Have a problem?
           </h2>
           <p className="mx-auto mt-5 max-w-md text-[15px] leading-relaxed text-mute md:text-base">
             Tell me what you're building, what isn't working, or what you're

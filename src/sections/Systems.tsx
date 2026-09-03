@@ -8,7 +8,7 @@ export default function Systems() {
       <Reveal>
         <SectionHeading
           index="03"
-          title="How I think about systems"
+          title="How I think about systems &amp; softwares"
           description="Every product decision eventually becomes an infrastructure decision. Working through that chain deliberately is most of the job."
         />
       </Reveal>
