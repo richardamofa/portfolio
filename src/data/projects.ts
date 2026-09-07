@@ -273,7 +273,7 @@ export const projects: Project[] = [
     },
 
     links: {
-      live: "https://prepd-web-psi.vercel.app",
+      live: "https://www.prepd.site",
     },
   },
 
