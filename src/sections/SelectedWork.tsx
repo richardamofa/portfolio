@@ -14,7 +14,7 @@ export default function SelectedWork() {
           <SectionHeading
             index="02"
             title="Selected work"
-            description="A sample of softwares and systems I've designed and built — the problem behind each one mattered as much as the code."
+            description="A sample of softwares and systems I've designed and built - the problem behind each one mattered as much as the code."
           />
           <Link
             to="/work"
