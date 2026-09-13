@@ -4,7 +4,7 @@ export const experience: ExperienceEntry[] = [
   {
     organization: "Voima",
     role: "FULL-STACK ENGINEER",
-    period: "May 2026 — Present",
+    period: "May 2026 - Present",
     context: 
       "Building and evolving Voima's production digital platform across the frontend, backend, CMS, and data layers. I translate changing product and organizational requirements into systems that are maintainable, reusable, and practical for the people operating them.",
     impact: [
@@ -15,7 +15,7 @@ export const experience: ExperienceEntry[] = [
   /*{
     organization: "[Voima / organization name]",
     role: "[Job title]",
-    period: "[Start] — [End]",
+    period: "[Start] - [End]",
     context:
       "[One or two sentences on the team, product, and what you were responsible for.]",
     impact: [
@@ -26,12 +26,12 @@ export const experience: ExperienceEntry[] = [
 ];
 
 export const repos: Repo[] = [
-  {
-    name: "HMS",
-    description: "A simple CRUD hospital management system.",
+    {
+    name: "Biggs Fitness App",
+    description: "AI-powered fitness app. Modular-monolith backend, mobile-first React frontend.",
     language: "TypeScript",
-    type: "Tool",
-    url: "https://github.com/richardamofa/hms",
+    type: "Experiment",
+    url: "https://github.com/richardamofa/biggs-fitness-app.v2.0",
   },
   {
     name: "Seek Jobs Ghana",
@@ -41,10 +41,10 @@ export const repos: Repo[] = [
     url: "https://github.com/richardamofa/seekjobsghana",
   },
   {
-    name: "Educom",
-    description: "Landing page for an educational platform for kids and teens.",
-    language: "ReactJS, Vanilla CSS",
-    type: "Experiment",
-    url: "https://github.com/richardamofa/Educom",
+    name: "HMS",
+    description: "A simple CRUD hospital management system.",
+    language: "TypeScript",
+    type: "Tool",
+    url: "https://github.com/richardamofa/hms",
   },
 ];
