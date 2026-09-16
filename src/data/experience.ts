@@ -36,9 +36,16 @@ export const repos: Repo[] = [
   {
     name: "Seek Jobs Ghana",
     description: "A uniformed layout for an online vacancy platform.",
-    language: "HTML,CSS,JS,PHP",
+    language: "HTML, CSS, JS, PHP",
     type: "Application",
     url: "https://github.com/richardamofa/seekjobsghana",
+  },
+  {
+    name: "Authenticated Login System",
+    description: "C++ console login system and is being developed into a web-based authentication system using Crow, Asio, and React.",
+    language: "JavaScript, Tailwind CSS, C++, HTML",
+    type: "Experiment",
+    url: "https://github.com/richardamofa/cpp-login-system",
   },
   {
     name: "HMS",
