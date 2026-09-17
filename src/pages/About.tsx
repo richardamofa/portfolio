@@ -47,7 +47,7 @@ export default function About() {
                 I'm a software engineer who spends as much time thinking about
                 structure as I do writing implementation. A feature that
                 works today but can't survive the next requirement isn't
-                finished — it's deferred work.
+                finished - it's deferred work.
               </p>
               <p className="text-[16px] leading-relaxed text-mute">
                 My process usually starts with questions rather than code:
@@ -57,21 +57,21 @@ export default function About() {
                 them in production.
               </p>
               <p className="text-[16px] leading-relaxed text-mute">
-                I've worked across the stack — from interface to
-                infrastructure — but the common thread is ownership: caring
+                I've worked across the stack - from interface to
+                infrastructure - but the common thread is ownership: caring
                 about a system's behavior after it ships, not just its
                 correctness on the day it does.
               </p>
               <p className="text-[16px] leading-relaxed text-mute">
                 Outside of client and employer work, I spend time on smaller
-                technical experiments — see{" "}
+                technical experiments - see{" "}
                 <a
                   href="https://github.com/richardamofa"
                   className="text-paper underline decoration-line underline-offset-4"
                 >
                   GitHub
                 </a>{" "}
-                — usually about the same questions: boundaries, data, and
+                - usually about the same questions: boundaries, data, and
                 what happens when things go wrong.
               </p>
               <p className="text-[15px] leading-relaxed text-faint">

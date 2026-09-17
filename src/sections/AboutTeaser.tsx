@@ -15,7 +15,7 @@ export default function AboutTeaser() {
             <p className="text-[16px] leading-relaxed text-mute md:text-[17px]">
               I approach engineering as a series of decisions, not a series of
               tasks. Before writing code, I want to understand what has to be
-              true for the system to succeed — technically and for the
+              true for the system to succeed - technically and for the
               product it serves.
             </p>
             <p className="mt-4 text-[16px] leading-relaxed text-mute md:text-[17px]">

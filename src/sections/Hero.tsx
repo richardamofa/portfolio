@@ -31,7 +31,7 @@ export default function Hero() {
         transition={{ duration: 0.7, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
         className="mt-8 max-w-xl text-[17px] leading-relaxed text-mute md:text-lg"
       >
-        I work at the intersection of product and engineering — turning
+        I work at the intersection of product and engineering - turning
         ambiguous requirements into architecture, and architecture into
         software that keeps working after launch day.
       </motion.p>

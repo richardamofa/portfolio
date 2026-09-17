@@ -1,1 +1,1 @@
-# Richard Amofa — Portfolio
+# Richard Amofa - Portfolio

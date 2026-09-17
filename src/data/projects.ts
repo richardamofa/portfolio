@@ -304,7 +304,7 @@ export const projects: Project[] = [
     ],
 
     summary:
-      "A complete shopping experience built from the fundamentals of the web — using HTML, CSS, and JavaScript to turn a simple idea into a functional commerce platform.",
+      "A complete shopping experience built from the fundamentals of the web - using HTML, CSS, and JavaScript to turn a simple idea into a functional commerce platform.",
 
     problem:
       "The challenge was not choosing a large framework or assembling a collection of packages. It was proving that the fundamentals were enough to build a polished, responsive, and usable shopping experience. Beef Luxury was built around that constraint: start with simple web technologies and make them do the work.",

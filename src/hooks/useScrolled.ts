@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
-/**
- * Returns true once the page has scrolled past `threshold`.
- * Uses a rAF-throttled scroll listener to stay off the main thread's back.
+/*
+  Returns true once the page has scrolled past `threshold`.
+  Uses a rAF-throttled scroll listener to stay off the main thread's back.
  */
 export function useScrolled(threshold = 24): boolean {
   const [scrolled, setScrolled] = useState(false);

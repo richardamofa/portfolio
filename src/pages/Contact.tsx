@@ -91,7 +91,7 @@ export default function Contact() {
                   required
                   rows={6}
                   className="mt-2 w-full resize-none rounded-xl border border-line bg-surface px-4 py-3 text-[15px] text-paper outline-none transition-colors placeholder:text-faint focus:border-paper/40"
-                  placeholder="A few sentences of context — what you're building, or what isn't working."
+                  placeholder="A few sentences of context - what you're building, or what isn't working."
                 />
               </div>
 
