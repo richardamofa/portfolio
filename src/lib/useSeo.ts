@@ -20,7 +20,7 @@ function setMeta(name: string, content: string, attr: "name" | "property" = "nam
 /** Sets the document title and description per page/route for basic SEO + social sharing. */
 export function useSeo({ title, description }: SeoOptions) {
   useEffect(() => {
-    const fullTitle = title === SITE_NAME ? title : `${title} — ${SITE_NAME}`;
+    const fullTitle = title === SITE_NAME ? title : `${title} - ${SITE_NAME}`;
     document.title = fullTitle;
 
     if (description) {

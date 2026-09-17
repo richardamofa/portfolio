@@ -32,7 +32,7 @@ export default function Work() {
           </h1>
 
           <p className="max-w-sm text-[15px] leading-relaxed text-mute md:pb-1">
-            A selection of products, systems, and engineering work — with the
+            A selection of products, systems, and engineering work - with the
             reasoning behind each build.
           </p>
         </div>

@@ -14,7 +14,7 @@ export default function Home() {
   useSeo({
     title: "Richard Amofa",
     description:
-      "Software engineer and systems architect. I build the systems behind ambitious digital products — architecture, backend engineering, and technical ownership from idea to production.",
+      "Software engineer and systems architect. I build the systems behind ambitious digital products - architecture, backend engineering, and technical ownership from idea to production.",
   });
 
   return (

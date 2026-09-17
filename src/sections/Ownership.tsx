@@ -8,7 +8,7 @@ const POINTS = [
   },
   {
     title: "Making the architectural decisions",
-    body: "Where a boundary sits, what's synchronous, what's eventually consistent — these decisions are cheap to make early and expensive to unmake later.",
+    body: "Where a boundary sits, what's synchronous, what's eventually consistent - these decisions are cheap to make early and expensive to unmake later.",
   },
   {
     title: "Connecting product requirements to engineering",
@@ -20,7 +20,7 @@ const POINTS = [
   },
   {
     title: "Owning technical outcomes",
-    body: "Shipping isn't the finish line. Watching how a system behaves in production — and being accountable for it — is part of building it.",
+    body: "Shipping isn't the finish line. Watching how a system behaves in production - and being accountable for it - is part of building it.",
   },
 ];
 

@@ -6,7 +6,7 @@ export interface Principle {
 export const principles: Principle[] = [
   {
     statement: "Simplicity beats unnecessary complexity.",
-    note: "The simplest system that meets the real requirements is usually the right one — complexity should be earned, not assumed.",
+    note: "The simplest system that meets the real requirements is usually the right one - complexity should be earned, not assumed.",
   },
   {
     statement: "Architecture is about trade-offs.",
@@ -22,6 +22,6 @@ export const principles: Principle[] = [
   },
   {
     statement: "Ownership extends beyond writing code.",
-    note: "Shipping is the midpoint, not the finish line — a system's behavior in production is still your responsibility.",
+    note: "Shipping is the midpoint, not the finish line - a system's behavior in production is still your responsibility.",
   },
 ];

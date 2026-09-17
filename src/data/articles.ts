@@ -7,7 +7,7 @@ export const articles: Article[] = [
     slug: "on-technical-debt",
     title: "Technical debt is a financing decision, not a moral failing",
     excerpt:
-      "Treating debt as a spectrum of trade-offs — some deliberate and cheap to repay, some silent and compounding — instead of a single guilty word.",
+      "Treating debt as a spectrum of trade-offs - some deliberate and cheap to repay, some silent and compounding - instead of a single guilty word.",
     topic: "Engineering decisions",
     date: null,
     status: "planned",
@@ -25,7 +25,7 @@ export const articles: Article[] = [
     slug: "consistency-is-a-choice-per-read-path",
     title: "Consistency is a choice you make per read path",
     excerpt:
-      "Strong and eventual consistency aren't competing philosophies — most real systems need both, applied deliberately in different places.",
+      "Strong and eventual consistency aren't competing philosophies - most real systems need both, applied deliberately in different places.",
     topic: "Data & systems",
     date: null,
     status: "planned",
