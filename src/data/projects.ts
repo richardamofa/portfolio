@@ -12,6 +12,11 @@ import beeflxryAbout from "../assets/projects/beeflxry/bxf_about.png";
 import beeflxryOverview from "../assets/projects/beeflxry/bxf_hero.png";
 import beeflxryShop from "../assets/projects/beeflxry/bxf_shop.png";
 
+import justbuyDashboard from "../assets/projects/justbuy/justbuy_dashboard.png";
+import justbuyOverview from "../assets/projects/justbuy/justbuy_hero.png";
+import justbuyProduct from "../assets/projects/justbuy/justbuy_product.png";
+import justbuyShop from "../assets/projects/justbuy/justbuy_shop.png";
+
 export const projects: Project[] = [
   {
     slug: "voima-platform",
@@ -274,6 +279,146 @@ export const projects: Project[] = [
 
     links: {
       live: "https://www.prepd.site",
+    },
+  },
+
+  {
+    slug: "justbuy-ecommerce-platform",
+    name: "JustBuy Ecommerce Platform",
+    year: "2026",
+    role: "Fullstack engineering",
+    status: "In development",
+    featured: true,
+
+    images: [
+      {
+        src: justbuyOverview,
+        alt: "JustBuy ecommerce platform interface",
+        caption: "JustBuy ecommerce platform home",
+      },
+      {
+        src: justbuyShop,
+        alt: "JustBuy ecommerce platform interface",
+        caption: "Product discovery and shopping experience",
+      },
+      {
+        src: justbuyProduct,
+        alt: "JustBuy ecommerce platform interface",
+        caption: "Product order and cart",
+      },
+      {
+        src: justbuyDashboard,
+        alt: "JustBuy ecommerce platform interface",
+        caption: "Dashboard Overview with products catalog",
+      },
+    ],
+
+    summary:
+      "A complete single tenant store built around the idea of managing a single store instead of a multi-tenant platform.",
+
+    problem:
+      "What if I build a multi-tenant ecommerce platform? But I need to first understand how a single storefront would work in that sense.",
+
+    outcome:
+      "A monorepo single tenant or in simple terms a broad ecommerce with a single vibe based on user's need.(idea yet to be implemented - just realised it will be cool that way)",
+    stack: [
+      {
+        domain: "Fullstack",
+        items: ["TypeScript", "React", "PostgreSQL", "Prisma", "Fastify API"],
+      },
+      {
+        domain: "Engineering",
+        items: ["Monorepo", "Responsive Design", "Scalability"],
+      },
+      {
+        domain: "Product",
+        items: ["Shopping Experience", "Product Discovery", "Single Tenant"],
+      },
+    ],
+
+    sections: {
+      context: {
+        heading: "Context",
+        body: [
+          "JUSTBUY was built around a simple idea: create a flexible, single-store ecommerce platform that can support different product categories without being tied to one specific niche.",
+          "Beyond building the shopping experience, I wanted to explore how a modern ecommerce application could be structured for maintainability and future growth. This led me to a monorepo architecture, with separate applications for the storefront, admin panel, and API.",
+          "While PHP and Laravel are established choices for building CRUD-heavy applications and content management systems, I chose TypeScript across the stack to strengthen type safety and maintain consistency between the frontend, backend, and shared contracts.",
+        ],
+      },
+
+      constraints: {
+        heading: "Constraints",
+        body: [
+          "Setting up the monorepo required careful workspace configuration, dependency management, and running commands from the correct directories. As my second monorepo project, it also gave me an opportunity to apply lessons from my previous experience.",
+          "Moving to pnpm workspaces meant adapting from familiar npm workflows and understanding how dependencies and scripts behave across multiple applications and shared packages.",
+          "Another consideration was balancing extensibility with complexity. The platform needed to support configurable homepage sections, product variants, categories, collections, and order management without introducing unnecessary infrastructure.",
+        ],
+      },
+
+      architecture: {
+        heading: "Architecture",
+        body: [
+          "JUSTBUY uses a pnpm monorepo to organize the storefront, admin dashboard, and backend API in a single repository. Each application has a distinct responsibility while sharing common packages where appropriate.",
+          "The storefront and admin dashboard use React, TypeScript, Vite, and Tailwind CSS. TanStack Query manages server-state interactions, while Zustand handles client-side state where needed.",
+          "The backend uses Node.js, TypeScript, and Fastify to expose versioned REST API endpoints. Prisma provides database access to PostgreSQL, while shared contracts define validation schemas and data structures used across the application.",
+          "This structure separates presentation, business logic, data access, and shared types while keeping the codebase organized for future development.",
+        ],
+      },
+
+      decisions: {
+        heading: "Technical decisions",
+        body: [
+          "A monorepo was chosen to keep the storefront, admin dashboard, API, and shared packages together while maintaining clear boundaries between applications.",
+          "TypeScript and shared Zod contracts help maintain consistent data shapes and validation rules across frontend and backend boundaries, reducing avoidable integration errors.",
+          "Fastify and Prisma provide a structured foundation for API development and database operations, while PostgreSQL supports relational data such as products, categories, variants, customers, and orders.",
+          "The platform separates categories, curated collections, and homepage sections so that product organization and storefront merchandising can evolve independently.",
+          "The architecture prioritizes practical extensibility. Payments, image storage, and other external services can be integrated through dedicated boundaries rather than spreading provider-specific logic throughout the application.",
+        ],
+      },
+
+      implementation: {
+        heading: "Implementation",
+        body: [
+          "The storefront and admin dashboard were implemented with React and TypeScript, with Tailwind CSS providing a consistent styling system and responsive layouts.",
+          "The storefront focuses on product discovery, category navigation, collections, product details, variant selection, and the shopping experience. The admin dashboard provides interfaces for managing products, categories, collections, orders, and configurable homepage sections.",
+          "The backend exposes REST endpoints through Fastify, validates incoming data using shared Zod schemas, and uses Prisma to persist application data in PostgreSQL.",
+          "Shared UI components and contracts reduce duplication across the monorepo, while TanStack Query supports API data fetching, caching, and mutation workflows.",
+        ],
+      },
+
+      challenges: {
+        heading: "Challenges",
+        body: [
+          "One of the main challenges was coordinating multiple applications and shared packages without creating unnecessary dependencies between them. Workspace configuration and consistent package boundaries were essential to keeping development manageable.",
+          "Keeping frontend forms, API validation, and database models aligned required deliberate contract design. Changes to product variants, taxonomy, and homepage configuration had to remain consistent across the different layers.",
+          "Building a configurable homepage introduced additional complexity because section types have different data requirements, yet they must share a common system for ordering, enabling, editing, and persistence.",
+          "Another challenge was designing for future expansion without overengineering the initial implementation. The goal was to establish a solid foundation while keeping the development workflow practical.",
+        ],
+      },
+
+      outcome: {
+        heading: "Outcome",
+        body: [
+          "JUSTBUY establishes the foundation for a configurable, single-store ecommerce platform that can accommodate a wide range of product categories rather than being limited to a single niche.",
+          "The project brings the storefront, administrative tools, API, shared contracts, and relational data model into one organized codebase.",
+          "Its architecture supports key ecommerce workflows, including product management, category and collection organization, configurable homepage sections, product variants, and order administration.",
+          "The result is a practical full-stack engineering project that demonstrates architectural planning, type-safe application development, API design, database modeling, and the relationship between technical decisions and product requirements.",
+        ],
+      },
+
+      lessons: {
+        heading: "Lessons",
+        body: [
+          "The biggest lesson was that architecture should follow the needs of the product. A monorepo is useful when applications benefit from shared contracts and coordinated development, but its value depends on maintaining clear boundaries.",
+          "Type safety becomes more valuable when it connects the frontend, backend, and database-facing logic rather than being used only to annotate individual components.",
+          "I also learned that configurable systems require careful data modeling. Features such as product variants and homepage sections need structures that are flexible enough for different use cases without becoming difficult to validate or maintain.",
+          "Ultimately, JUSTBUY reinforced the importance of balancing maintainability, extensibility, and implementation complexity. Good engineering is not about adopting the largest possible stack; it is about choosing tools and structures that solve the product's actual problems.",
+        ],
+      },
+    },
+
+    links: {
+      live: "https://github.com/richardamofa/justbuy-ecommerce",
     },
   },
 

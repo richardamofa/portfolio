@@ -29,7 +29,7 @@ export interface Project {
 
   featured: boolean;
 
-  status: "In production" | "Case study" | "Experiment";
+  status: "In production" | "Case study" | "Experiment" | "In development";
 
   sections: {
     context: ProjectSection;
