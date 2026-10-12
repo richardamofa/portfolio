@@ -17,7 +17,12 @@ import justbuyOverview from "../assets/projects/justbuy/justbuy_hero.png";
 import justbuyProduct from "../assets/projects/justbuy/justbuy_product.png";
 import justbuyShop from "../assets/projects/justbuy/justbuy_shop.png";
 
+import quickqrSample from "../assets/projects/quickqr/qr-studio-code.png";
+import quickqrEnd from "../assets/projects/quickqr/quickqr_end.png";
+import quickqrOverview from "../assets/projects/quickqr/quickqr_home.png";
+
 export const projects: Project[] = [
+  /* VOIMA DATA */
   {
     slug: "voima-platform",
     name: "Voima Initiative Platform",
@@ -153,6 +158,7 @@ export const projects: Project[] = [
     },
   },
 
+  /* PREPD DATA */
   {
     slug: "prepd-commerce-platform",
     name: "PREP'D Commerce Platform",
@@ -279,6 +285,129 @@ export const projects: Project[] = [
 
     links: {
       live: "https://www.prepd.site",
+    },
+  },
+
+  /* QUICK QR */
+  {
+    slug: "quick-qr-website",
+    name: "Quick QR",
+    year: "2026",
+    role: "Fullstack engineering",
+    status: "In production",
+    featured: true,
+
+    images: [
+      {
+        src: quickqrOverview,
+        alt: "quickqr home",
+        caption: "Quick QR home",
+      },
+      {
+        src: quickqrEnd,
+        alt: "quickqr end",
+        caption: "Quick QR end",
+      },
+      {
+        src: quickqrSample,
+        alt: "quickqr sample",
+        caption: "Quick QR sample",
+      },
+    ],
+
+    summary:
+      "A minimal utility product which helps you to generate a QR code for Website URLs, Wi-Fi, Phone, WhatsApp Details and random texts.",
+
+    problem:
+      "Building utility products I can use myself to enhance productivity.",
+
+    outcome:
+      "A simple qr code generator app which requires no accounts, stores sessions locally and absolutely FREE!",
+    stack: [
+      {
+        domain: "Fullstack",
+        items: ["TypeScript", "React"],
+      },
+      {
+        domain: "Engineering",
+        items: ["Responsive Design", "Minimalistic"],
+      },
+      {
+        domain: "Product",
+        items: ["User Experience", "User Interface", "Easy Usage"],
+      },
+    ],
+
+    sections: {
+      context: {
+        heading: "Context",
+        body: [
+          "Quick QR is a lightweight utility for creating QR codes from website URLs, Wi-Fi details, phone numbers, WhatsApp details, and plain text.",
+          "I built it as a practical tool I could use myself, keeping the experience simple and accessible without requiring an account.",
+        ],
+      },
+
+      constraints: {
+        heading: "Constraints",
+        body: [
+          "The generator needed to support several kinds of input while keeping the workflow quick and easy to understand.",
+          "I kept the product lightweight, with no account requirement and locally stored sessions instead of unnecessary backend infrastructure.",
+        ],
+      },
+
+      architecture: {
+        heading: "Architecture",
+        body: [
+          "Quick QR is a focused React and TypeScript application that handles QR generation in the browser.",
+          "Its client-side approach keeps the utility simple to use and avoids requiring users to create an account.",
+        ],
+      },
+
+      decisions: {
+        heading: "Technical decisions",
+        body: [
+          "I chose React and TypeScript to build a small, responsive interface for the different QR code formats.",
+          "Keeping the experience account-free and sessions local avoids adding infrastructure that a simple utility does not need.",
+          "The focus is on making input selection and QR code generation straightforward across devices.",
+        ],
+      },
+
+      implementation: {
+        heading: "Implementation",
+        body: [
+          "Users can choose a QR code type and enter website URLs, Wi-Fi credentials, phone numbers, WhatsApp details, or plain text.",
+          "The interface generates the QR code without requiring an account, and sessions are stored locally.",
+          "The responsive layout keeps the generator usable on both desktop and mobile screens.",
+        ],
+      },
+
+      challenges: {
+        heading: "Challenges",
+        body: [
+          "Supporting different QR code formats means presenting the right inputs for each type without making the interface feel complicated.",
+          "I kept the implementation focused on the core utility rather than introducing accounts or services users do not need.",
+        ],
+      },
+
+      outcome: {
+        heading: "Outcome",
+        body: [
+          "Quick QR provides a free, account-free way to generate QR codes for common everyday uses.",
+          "It supports multiple input types in a simple responsive interface and stores sessions locally.",
+        ],
+      },
+
+      lessons: {
+        heading: "Lessons",
+        body: [
+          "A small utility benefits from keeping its workflow direct and avoiding infrastructure that does not improve the user experience.",
+          "Supporting multiple input types works best when each option remains clear and easy to use.",
+        ],
+      },
+    },
+
+    links: {
+      live: "https://quickqr-ashy.vercel.app/",
     },
   },
 
