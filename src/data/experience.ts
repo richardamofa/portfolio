@@ -1,9 +1,21 @@
 import type { ExperienceEntry, Repo } from "../types/experience";
 
 export const experience: ExperienceEntry[] = [
+    {
+    organization: "SwapGPA Technologies Ltd.",
+    role: "Software Developer",
+    period: "September 2026 - Present",
+    context:
+      "Being part of the engineering team, I was involved in building the company's innovative products for it's audience, i.e students.",
+    impact: [
+      "Developed the user friendly interfaces and experiences across it's innovative product.",
+      "Made both technical and architectural decision in products development for better structure.",
+      "Research methods to capture users attention in app flow.",
+    ],
+  },
   {
     organization: "Voima",
-    role: "FULL-STACK ENGINEER",
+    role: "Full-Stack Engineer",
     period: "May 2026 - Present",
     context: 
       "Building and evolving Voima's production digital platform across the frontend, backend, CMS, and data layers. I translate changing product and organizational requirements into systems that are maintainable, reusable, and practical for the people operating them.",
@@ -12,17 +24,6 @@ export const experience: ExperienceEntry[] = [
       "Made architectural decisions around the separation of React presentation, Sanity content, backend services, and PostgreSQL application data, allowing the platform to evolve without tightly coupling the content, UI, and business logic.",
     ],
   },
-  /*{
-    organization: "[Voima / organization name]",
-    role: "[Job title]",
-    period: "[Start] - [End]",
-    context:
-      "[One or two sentences on the team, product, and what you were responsible for.]",
-    impact: [
-      "[A specific system or capability you owned end to end.]",
-      "[A technical decision you made and the trade-off behind it.]",
-    ],
-  },*/
 ];
 
 export const repos: Repo[] = [
